@@ -49,12 +49,18 @@ thought-garden は、思考を時間をかけて育てるための個人用日�
 
 ## ディレクトリ構成
 
+業務で利用している Docker 構成を参考にしつつ、
+
+個人開発として必要最小限の構成にしている。
+
+HTTPS や認証が不要なため、現時点では mkcert は採用していない。
+
 - thought-garden/
   - docker/
     - php/
       - Dockerfile
     - nginx/
       - default.conf
-  - doker-compose.yml
+  - docker-compose.yml
   - src/
   - README.md
